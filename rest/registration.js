@@ -21,7 +21,6 @@ const {
  * @apiSuccess {String} password User password.
 */
 router.post('/', asyncHandler(async (req, res) => {
-  console.log('::::::', req.body);
   if (!req.body.login) {
     res.send(400, { err: 'send login' });
     return -1;
@@ -46,7 +45,6 @@ router.post('/', asyncHandler(async (req, res) => {
 
     res.send(user);
   } catch (error) {
-    console.log(error);
     res.send(409, { err: 'Can\'t register user' });
   }
 }));

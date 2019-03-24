@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": " NODE_ENV=development jest --detectOpenHandles"
+    "test": " NODE_ENV=development jest --detectOpenHandles",
+    "build": "webpack-cli --config ./webpack.config.js --mode development ./assets/index.js --output ./public/index.js"
   },
   "author": "",
   "license": "ISC",

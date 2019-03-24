@@ -52,8 +52,6 @@
         const login = document.querySelector('#login').value;
   const password = document.querySelector('#password').value;
 
-  console.log(login, password);
-
   const rawResponse = await fetch('/rest/login', {
     method: 'POST',
     headers: {

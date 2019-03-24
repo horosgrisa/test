@@ -57,8 +57,6 @@
   const password = document.querySelector('#password').value;
   const name = document.querySelector('#name').value;
 
-  console.log(login, password,name);
-
   const rawResponse = await fetch('/rest/registration', {
     method: 'POST',
     headers: {

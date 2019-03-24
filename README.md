@@ -21,3 +21,12 @@ node index.js
 ````
 
 And open `http://localhost:8000/`
+
+#### Users
+
+|  login  | password |
+|:-------:|:--------:|
+| admin   | admin    |
+| default | default  |
+| test    | test     |
+

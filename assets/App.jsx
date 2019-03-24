@@ -7,7 +7,7 @@ import Group from './Group/index.jsx';
 export default class App extends React.Component {
   constructor(props) {
     super(props);
-    this.state = { selected: 'GROUPS' };
+    this.state = { selected: 'MAIN' };
   }
 
   render() {

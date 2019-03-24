@@ -1,0 +1,56 @@
+{
+  "root": true,
+  "parserOptions": {
+    "ecmaVersion": 2019,
+    "sourceType": "module"  },
+  "extends": [
+    "eslint:recommended",
+    "airbnb",
+    "plugin:react/recommended",
+    "plugin:unicorn/recommended",
+    "plugin:jsx-a11y/recommended",
+    "plugin:promise/recommended",
+    "plugin:security/recommended"
+  ],
+  "plugins": [
+    "html",
+    "no-loops",
+    "unicorn",
+    "jsx-a11y",
+    "async-await",
+    "prefer-object-spread",
+    "promise",
+    "security"
+  ],
+  "env": {
+    "browser": true,
+    "node": true
+  },
+  "globals": {
+    "React": true,
+    "ReactDOM": true
+  },
+  "rules": {
+    "unicorn/filename-case": 0,
+    "jsx-quotes": [2, "prefer-double"],
+    "react/prefer-stateless-function": 0,
+    "no-console": [1],
+    "async-await/space-after-async": 2,
+    "async-await/space-after-await": 2,
+
+    "prefer-object-spread/prefer-object-spread": 2,
+    "jsx-a11y/label-has-for": [
+      2,
+      {
+        "components": ["Label"],
+        "required": {
+          "every": ["nesting", "id"]
+        },
+        "allowChildren": true
+      }
+    ],
+
+    "sort-imports": [0]
+    
+  }
+}

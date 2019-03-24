@@ -22,6 +22,12 @@ node index.js
 
 And open `http://localhost:8000/`
 
+For documentation
+
+```bash
+apidoc -i ./rest/ -o ./doc/api/
+```
+
 #### Users
 
 |  login  | password |

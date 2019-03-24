@@ -2,9 +2,17 @@
 
 ### Quick start
 
+Run
+
 ```bash
 git clone https://github.com/horosgrisa/test
 cd test 
+cp config/config.example.json config/config.json
+```
+
+Edit `config/config.json` and continue
+
+```bash
 npm i -D
 npm run build
 npm run migrations

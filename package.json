@@ -5,6 +5,8 @@
   "main": "index.js",
   "scripts": {
     "test": " NODE_ENV=development jest --detectOpenHandles",
+    "migrations": " NODE_ENV=development sequelize db:migrate",
+    "seeds": " NODE_ENV=development sequelize db:seed:all",
     "build": "webpack-cli --config ./webpack.config.js --mode development ./assets/index.js --output ./public/index.js"
   },
   "author": "",
